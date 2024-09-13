@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    
+}
+
+body{
+    background-image: url('dbayram.png');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+}
+#top{
+    background-color:#1b0056;
+    display: flex;
+    justify-content: start;
+    border-bottom: solid rgba(255, 255, 255, 0.244) 1px;
+}
+.dropbtn, #home{
+    background-color: #00000015;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-right: solid rgba(255, 255, 255, 0.258) 1px;
+    transition: all 0.3 s;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  #homebtn{
+    color: white;
+  }
+  
+  #sepet{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.103);
+    color:#f1f1f1;
+    cursor: pointer;
+    border-right: solid rgba(255, 255, 255, 0.258) 1px
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /*
+  span{
+    background-color: #000000c9;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right:25px ;
+    
+  }
+  */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {
+    background-color: #573e8e;
+    color:white;
+    
+}
+
+  #yazı{
+    color: #000000;
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-shadow: 0px 0px  15px rgb(83, 82, 82);
+    background-color: rgba(240, 255, 255, 0.514);
+    margin: 15px 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    
+
+  }
+
+  #logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .logo_resim{
+    display: flex;
+    font-size: 20px;
+    width:125px;
+    padding-left: 10px;
+  }
+
+.logo_resim:hover{
+    color: #573e8e;
+  }
+
+  #ürünler img{
+    width:50%;
+    border:solid 0.5px;
+    margin-bottom:5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(106, 98, 98);
+  }
+
+  #ürünler{
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     text-align: center;  
+     margin-left: 50px;
+     margin-right: 50px;
+     background-color: #000000dd;
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px black;
+
+  }
+  
+  .ürün{
+    margin-bottom:20px;
+    margin-top: 30px;
+    color: #ddd;
+    
+  
+  }
+  h4{
+    text-align:center;
+    margin-top: 7px;
+    font-size: 12px;
+    
+  }
+
+  h3{
+    margin-top: 5px;
+
+  }
+
+  footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: rgb(255, 252, 252);
+
+
+  }
+  .mergenlink{
+    text-decoration: none;
+    color:rgb(202, 158, 244)
+  }

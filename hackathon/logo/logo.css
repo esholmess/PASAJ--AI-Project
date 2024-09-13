@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+body{
+    background-color:#0a001f;
+}
+#top{
+    background-color:#1b0056;
+    display: flex;
+    justify-content: start;
+    border-bottom: solid rgba(255, 255, 255, 0.244) 1px;
+}
+#home {
+    background-color: #00000015;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-right: solid rgba(255, 255, 255, 0.258) 1px;
+    transition: all 0.3 s;
+  }
+  #homebtn{
+    color: white;
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .logo_resim{
+    display: flex;
+    font-size: 20px;
+    width:125px;
+    padding-left: 10px;
+  }
+
+.logo_resim:hover{
+    color: #573e8e;
+  }
+
+  .üye_açıklama{
+    margin: 15px;
+  }
+
+  footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .takım_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
+  }
+
+  .üye{
+    width: 250px;;
+    border-radius: 30%;
+    margin: 10px;
+  }
+
+  #üyecont{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: dotted 3px rgba(204, 255, 0, 0.321);
+    border-radius: 15px;
+    margin: 10px;
+    flex-direction:column;
+  }
+  .mergen{
+    width: 300px;
+    border-radius: 15px;
+    margin:2px;
+
+  }
+  #üyecont img{
+    margin-top: 20px;
+  }
+  #üyecont h3{
+    font-size: 25px;
+    text-shadow: 0 0  10px rgb(161, 187, 57);
+    color: aliceblue;
+  }
+  .mergenlink{
+    text-decoration: none;
+    color:rgb(202, 158, 244)
+  }

@@ -1,0 +1,33 @@
+NAME OF THE PRODUCT, BRAND NAME, MODEL NAME, TOTAL VOLUME, HEIGHT, WIDTH, FREEZER FEATURE, MEDICINE, ENERGY_CLASS, WARRANTY_PERIOD, COLOUR, DEPTH, FREEZER LOCATION, PRICE, POINTS, COMMENTS, EVALUATION, COMMENT_NUM
+New Product 1, Brand X, Model X, 500.0, 150.0, 60.0, No Frost, Single Door, A++, 2.0, Silver, 55.0, Above, 3999.0, 4.7, "This refrigerator exceeded my expectations. H...", 224.0, 165.0
+New Product 2, Brand Y, Model Y, 450.0, 170.0, 70.0, Frost Free, Double Door, A+, 2.5, Black, 65.0, Below, 5999.0, 4.6, "Great value for money. The design is sleek an...", 189.0, 142.0
+New Product 3, Brand Z, Model Z, 550.0, 160.0, 65.0, No Frost, Triple Door, A++, 3.0, Red, 70.0, Above, 7999.0, 4.8, "I'm impressed by the efficiency of this refri...", 247.0, 185.0
+New Product 4, Brand W, Model W, 600.0, 180.0, 75.0, No Frost, Side-by-Side, A+++, 3.5, White, 75.0, Side, 9999.0, 4.9, "The best refrigerator I have ever owned. The sp...", 314.0, 234.0
+New Product 5, Brand A, Model A, 400.0, 140.0, 50.0, Static, Single Door, A, 1.5, Blue, 45.0, Above, 2999.0, 4.5, "Simple and effective. Exactly what I needed f...", 158.0, 119.0
+New Product 6, Brand B, Model B, 550.0, 160.0, 60.0, Frost Free, Double Door, A++, 2.0, Stainless Steel, 60.0, Below, 4999.0, 4.7, "Sleek design and spacious interior. Keeps foo...", 213.0, 159.0
+New Product 7, Brand C, Model C, 500.0, 150.0, 55.0, No Frost, Single Door, A+, 2.5, Silver, 55.0, Above, 3499.0, 4.6, "I have had this refrigerator for a few months n...", 178.0, 133.0
+New Product 8, Brand D, Model D, 600.0, 180.0, 70.0, No Frost, Triple Door, A+++, 3.0, Black, 70.0, Side, 8999.0, 4.8, "Absolutely love it. It is so spacious and effi...", 267.0, 200.0
+New Product 9, Brand E, Model E, 450.0, 170.0, 65.0, Frost Free, Double Door, A, 1.5, Red, 65.0, Below, 4299.0, 4.5, "Great product for the price. Looks great in m...", 178.0, 134.0
+New Product 10, Brand F, Model F, 550.0, 160.0, 70.0, No Frost, Side-by-Side, A++, 2.0, White, 70.0, Side, 7499.0, 4.7, "Excellent value for money. The spacious inter...", 224.0, 168.0
+New Product 11, Brand G, Model G, 400.0, 140.0, 45.0, Static, Single Door, A+, 2.5, Grey, 45.0, Above, 3199.0, 4.6, "Sleek design and great performance. Fits perf...", 147.0, 110.0
+New Product 12, Brand H, Model H, 600.0, 180.0, 75.0, No Frost, Double Door, A+++, 3.0, Stainless Steel, 75.0, Below, 10999.0, 4.9, "Absolutely fantastic refrigerator. It is spac...", 329.0, 246.0
+New Product 13, Brand I, Model I, 500.0, 150.0, 60.0, Frost Free, Double Door, A++, 2.5, Black, 60.0, Above, 5799.0, 4.8, "Very pleased with my purchase. The freezer wo...", 206.0, 154.0
+New Product 14, Brand J, Model J, 550.0, 160.0, 65.0, No Frost, Triple Door, A+++, 3.0, Blue, 65.0, Side, 8599.0, 4.9, "This refrigerator has exceeded my expectatio...", 257.0, 192.0
+New Product 15, Brand K, Model K, 450.0, 170.0, 70.0, No Frost, Side-by-Side, A, 2.0, Stainless Steel, 70.0, Below, 6999.0, 4.7, "It is been a few weeks since I bought this ref...", 224.0, 168.0
+New Product 16, Brand L, Model L, 600.0, 180.0, 75.0, No Frost, Double Door, A++, 2.5, Silver, 75.0, Above, 8999.0, 4.8, "I am impressed with how quiet this refrigerat...", 296.0, 222.0
+New Product 17, Brand M, Model M, 500.0, 150.0, 55.0, Frost Free, Single Door, A+, 2.5, Red, 55.0, Side, 4299.0, 4.6, "Great product overall. Keeps food fresh and t...", 178.0, 133.0
+New Product 18, Brand N, Model N, 550.0, 160.0, 60.0, No Frost, Double Door, A+++, 3.0, Grey, 60.0, Below, 7999.0, 4.9, "I am extremely happy with my purchase. The ref...", 239.0, 179.0
+New Product 19, Brand O, Model O, 400.0, 140.0, 50.0, Static, Single Door, A, 1.5, White, 50.0, Above, 2599.0, 4.4, "Simple and effective refrigerator. Does the ...", 134.0, 100.0
+New Product 20, Brand P, Model P, 550.0, 160.0, 65.0, Frost Free, Triple Door, A++, 2.0, Black, 65.0, Side, 8999.0, 4.8, "Very spacious and efficient. Love the design...", 261.0, 195.0
+New Product 21, Brand Q, Model Q, 500.0, 150.0, 60.0, No Frost, Double Door, A+, 2.5, Stainless Steel, 60.0, Below, 4999.0, 4.7, "I am very satisfied with this refrigerator. T...", 213.0, 159.0
+New Product 22, Brand R, Model R, 600.0, 180.0, 70.0, No Frost, Side-by-Side, A+++, 3.0, Silver, 70.0, Above, 9999.0, 4.9, "This refrigerator has exceeded my expectatio...", 297.0, 222.0
+New Product 23, Brand S, Model S, 450.0, 170.0, 55.0, Frost Free, Double Door, A, 1.5, Red, 55.0, Side, 4599.0, 4.5, "Very happy with my purchase. It fits perfectl...", 187.0, 140.0
+New Product 24, Brand T, Model T, 550.0, 160.0, 60.0, No Frost, Single Door, A++, 2.0, Blue, 60.0, Above, 5999.0, 4.8, "I've had this refrigerator for a few months n...", 223.0, 167.0
+New Product 25, Brand U, Model U, 500.0, 150.0, 55.0, Frost Free, Double Door, A+, 2.5, Black, 55.0, Side, 5499.0, 4.6, "This refrigerator meets all my expectations....", 198.0, 148.0
+New Product 26, Brand V, Model V, 600.0, 180.0, 70.0, No Frost, Triple Door, A+++, 3.0, Stainless Steel, 70.0, Below, 10999.0, 4.9, "Absolutely love this refrigerator. It is so s...", 328.0, 246.0
+New Product 27, Brand W, Model W, 450.0, 170.0, 65.0, Frost Free, Side-by-Side, A, 1.5, White, 65.0, Side, 6799.0, 4.7, "Great value for money. The freezer is spaciou...", 234.0, 176.0
+New Product 28, Brand X1, Model X1, 550.0, 160.0, 60.0, No Frost, Double Door, A++, 2.0, Grey, 60.0, Above, 7499.0, 4.7, "Sleek design and efficient. Couldn't be happi...", 223.0, 167.0
+New Product 29, Brand Y1, Model Y1, 500.0, 150.0, 55.0, Frost Free, Triple Door, A++, 3.0, Red, 55.0, Side, 8999.0, 4.8, "Excellent refrigerator. It is been a few mont...", 267.0, 200.0
+New Product 30, Brand Z1, Model Z1, 600.0, 180.0, 70.0, No Frost, Side-by-Side, A+++, 3.5, Blue, 70.0, Below, 11999.0, 5.0, "This refrigerator is amazing. I love the desi...", 358.0, 268.0
+New Product 31, Brand A1, Model A1, 450.0, 170.0, 65.0, Frost Free, Single Door, A+, 2.5, Stainless Steel, 65.0, Above, 4999.0, 4.6, "This refrigerator has been a great addition ...", 207.0, 155.0
+New Product 32, Brand B1, Model B1, 550.0, 160.0, 60.0, No Frost, Double Door, A++, 2.0, Silver, 60.0, below, 15468, 4.3, "My life is about to change...", 287.0, 512,0

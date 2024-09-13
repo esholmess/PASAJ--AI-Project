@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    color:#ddd
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(24deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(255,0,242,1) 100%); 
+    animation: gradient 6s ease infinite;
+    background-size: 300% 300%;
+    background-attachment: fixed;
+    
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+#top{
+    background-color: rgba(0, 0, 0, 0.766);
+    display: flex;
+    justify-content: start;
+    border-bottom: solid rgba(255, 255, 255, 0.244) 1px;
+}
+.dropbtn,#home {
+    background-color: #00000015;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-right: solid rgba(255, 255, 255, 0.258) 1px;
+    transition: all 0.3 s;
+  }
+  #homebtn{
+    color:white
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #sepet{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.103);
+    color:#f1f1f1;
+    cursor: pointer;
+    border-right: solid rgba(255, 255, 255, 0.258) 1px
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {
+    background-color: #573e8e;
+    color:white;
+    
+}
+
+  #yazı{
+    color:rgb(0, 0, 0);
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  #logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .logo_resim{
+    display: flex;
+    font-size: 20px;
+    width:125px;
+    padding-left: 10px;
+  }
+
+.logo_resim:hover{
+    color: #573e8e;
+  }
+
+  #ürünler img{
+    width:50%;
+    border:solid 1px rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(255, 251, 132);
+    margin-bottom:5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #ürünler{
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     text-align: center;  
+     margin-left: 50px;
+     margin-right: 50px;
+     background-color: rgba(35, 0, 24, 0.6);
+     border-radius: 7px;
+     padding: 10px;
+
+  }
+  
+  .ürün{
+    margin-bottom:50px;
+    margin-top: 30px;
+    
+  
+  }
+  h1{
+    font-size: 40px;
+  }
+  h4{
+    text-align:center;
+    margin-top: 7px;
+    font-size: 12px;
+    
+  }
+
+  h3, h4{
+    color:aliceblue
+  }
+
+  footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: rgb(124, 124, 124);
+
+
+  }
+  .mergenlink{
+    text-decoration: none;
+    color:rgb(202, 158, 244)
+  }

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harca Kazan Sistemi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #00051d;
+        }
+        .ürün1{
+            width: 350px;
+            border-radius: 10px;
+            margin: 10px;
+            margin-top: 20px;
+            border: solid 1px rgb(176, 157, 157);
+        }
+        .container {
+            width:80%;
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgb(42, 189, 218);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #aa4caf69;
+            color: rgb(14, 0, 37);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #6e5caf;
+            color:white
+        }
+        textarea {
+            width: 60%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            resize: vertical;
+            margin-left: 20%;
+        }
+        *{
+            list-style-type: none;
+        }
+        .ypbutton{
+            margin-left: 20%;
+
+        }
+        .aç_kapa{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <img class="ürün1" src="/imges/3.png" alt="ürün3">
+        <h3 style="margin-bottom: -2px; font-size: 18px; margin-top: -2px;">Televizyon - XXX TL</h3>
+        </div>
+        <h2 style="margin-bottom: -10px;">Harca Kazan Sistemi</h2>
+        <p style="margin-bottom: -3px;">Puanınız: <span id="puan">0</span></p>
+        
+        <br>
+        <button onclick="urunAl('urun1')">Ürün Satın Al</button>
+        <button onclick="yorumlariGoster()">Yorumları Göster</button>
+        <form id="yorumFormu" style="display: none;">
+            <p id="yorumSorusu" style="display: none;">Yorum yapmak ister misiniz?</p>
+            <div class="aç_kapa">
+            <button type="button" onclick="ac()" style="display: none; margin:0 10px">Evet</button>
+            <button type="button" onclick="kapat()" style="display: none;  margin:0 10px">Hayır</button>
+            </div>
+            <textarea id="yorum" placeholder="Yorumunuzu buraya yazın..." style="display: none;"></textarea>
+            <br>
+            <button class="ypbutton" type="button" onclick="yorumYap()" style="display: none;">Yorum Yap</button>
+        </form>
+        <div id="yorumlarDiv" style="display: none;">
+            <button onclick="kapatYorumlar()">Yorumları Kapat</button>
+            <div id="yorumlar"></div>
+        </div>
+        <div id="bildirim" style="display: none;"></div>
+    </div>
+
+    <script>
+        var puan = 0;
+        var URUN_ANAHTAR = "urun1";
+        var YORUMLAR_ANAHTAR = "yorumlar";
+        var yorumlar = {
+            "urun1": []
+        };
+        
+        function urunAl(urun) {
+            document.getElementById("yorumFormu").style.display = "block";
+            localStorage.setItem("aktifUrun", urun);
+            document.getElementById("yorumSorusu").style.display = "block";
+            document.getElementById("yorumFormu").querySelectorAll('button')[0].style.display = "block";
+            document.getElementById("yorumFormu").querySelectorAll('button')[1].style.display = "block";
+        }
+
+        function ac() {
+            document.getElementById("yorum").style.display = "block";
+            document.getElementById("yorumFormu").querySelectorAll('button')[2].style.display = "block";
+            kapatSoru();
+        }
+
+        function kapat() {
+            document.getElementById("yorum").style.display = "none";
+            document.getElementById("yorumFormu").querySelectorAll('button')[2].style.display = "none";
+            kapatSoru();
+        }
+
+        function kapatSoru() {
+            document.getElementById("yorumSorusu").style.display = "none";
+            document.getElementById("yorumFormu").querySelectorAll('button')[0].style.display = "none";
+            document.getElementById("yorumFormu").querySelectorAll('button')[1].style.display = "none";
+        }
+
+        function yorumYap() {
+            var yorum = document.getElementById("yorum").value;
+            if (yorum.trim() !== "") {
+                var aktifUrun = localStorage.getItem("aktifUrun");
+                yorumlar[aktifUrun].push(yorum);
+                localStorage.setItem(YORUMLAR_ANAHTAR, JSON.stringify(yorumlar));
+                puan += 10; // Her yorum için puanı 10 arttır
+                document.getElementById("puan").innerText = puan;
+                document.getElementById("yorum").value = "";
+                kapat();
+                bildirimGoster("Yorumunuz alındı! Total puanınız 50 olduğunda +1 salla kazan hakkı hattınıza tanımlanacaktır, keyifli alışverişle!");
+            } else {
+                alert("Lütfen bir yorum yazın.");
+            }
+        }
+
+        function yorumlariGoster() {
+            var yorumlarHTML = "<h3>Yorumlar</h3>";
+            var yorumlarJSON = localStorage.getItem(YORUMLAR_ANAHTAR);
+            if (yorumlarJSON) {
+                var yorumlarObjesi = JSON.parse(yorumlarJSON);
+                for (var urun in yorumlarObjesi) {
+                    yorumlarHTML += "<h4>" + urun + "</h4>";
+                    yorumlarHTML += "<ul>";
+                    yorumlarObjesi[urun].forEach(function(yorum, index) {
+                        yorumlarHTML += "<li>" + yorum + " <button onclick='yorumuSil(\"" + urun + "\", " + index + ")'>Sil</button></li>";
+                    });
+                    yorumlarHTML += "</ul>";
+                }
+                document.getElementById("yorumlar").innerHTML = yorumlarHTML;
+                document.getElementById("yorumlarDiv").style.display = "block";
+            } else {
+                alert("Henüz hiç yorum yapılmamış.");
+            }
+        }
+
+        function kapatYorumlar() {
+            document.getElementById("yorumlarDiv").style.display = "none";
+        }
+
+        function yorumuSil(urun, index) {
+            yorumlar[urun].splice(index, 1);
+            localStorage.setItem(YORUMLAR_ANAHTAR, JSON.stringify(yorumlar));
+            yorumlariGoster();
+            bildirimGoster("Yorum silindi.");
+        }
+
+        function bildirimGoster(mesaj) {
+            var bildirim = document.getElementById("bildirim");
+            bildirim.innerText = mesaj;
+            bildirim.style.display = "block";
+            setTimeout(function() {
+                bildirim.style.display = "none";
+            }, 4000); 
+        }
+    </script>
+</body>
+</html>

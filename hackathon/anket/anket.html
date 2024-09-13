@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anket</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 5%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Anket</h2>
+        <form id="anketFormu">
+            <div class="form-group">
+                <label for="renk">Son Zamanda Ne Satın Aldınız?</label>
+                <input type="radio" name="renk" value="kirmizi"> Televizyon<br>
+                <input type="radio" name="renk" value="mavi"> Telefon<br>
+                <input type="radio" name="renk" value="kirmizi"> Kulaklık<br>
+                <input type="radio" name="renk" value="yesil"> Oyun Konsolu<br>
+            </div>
+            <div class="form-group">
+                <label for="meyve">Alırken en çok neye dikkat ettiniz?</label>
+                <input type="radio" name="meyve" value="elma"> Garanti Süresi<br>
+                <input type="radio" name="meyve" value="muz"> Kamera kalitesi ve bellek kapasitesi (telefon, bilgisayar veya tablet ise) <br>
+                <input type="radio" name="meyve" value="portakal"> Fiyat <br>
+            </div>
+            <div class="form-group">
+                <label for="aktivite">Harca Kazan Sistemi hakkında düşünceleriniz neler?</label>
+                <input type="radio" name="aktivite" value="yuruyus"> Gereksiz ama kalabilir<br>
+                <input type="radio" name="aktivite" value="yuzme"> Kötü, değiştirilmeli<br>
+                <input type="radio" name="aktivite" value="kitap"> Gayet iyi, kalmalı<br>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Anketi Gönder">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('anketFormu').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            let results = {};
+            for (let [key, value] of formData.entries()) {
+                if (results[value]) {
+                    results[value]++;
+                } else {
+                    results[value] = 1;
+                }
+            }
+            localStorage.setItem('anketSonuclari', JSON.stringify(results));
+            alert('Cevabınız kaydedildi, teşekkür ederiz!');
+        });
+    </script>
+</body>
+</html>
