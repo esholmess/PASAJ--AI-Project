@@ -5,6 +5,7 @@
 <p><span>#EN# </span> Our Turkcell Artificial Intelligence Hackathon project prototype, placed National Top-10 </p>
 
 
+
 Technologies:
 
 - Html, Css, JavaScript
